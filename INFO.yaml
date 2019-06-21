@@ -1,9 +1,9 @@
 ---
 
 project: 'test'
-project_creation_date: 'iiyasdadaes'
-project_category: 'hah'
-lifecycle_state: ''
+project_creation_date: 'yasdadaes'
+project_category: 'no'
+lifecycle_state: 'hi'
 project_lead: &opnfv_releng_ptl
     name: 'Trevor Bramwell'
     company: 'The Linux Foundation'
