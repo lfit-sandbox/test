@@ -12,7 +12,7 @@ project_lead: &opnfv_releng_ptl
     timezone: 'America/Los_Angeles'
 primary_contact: *opnfv_releng_ptl
 issue_tracking:
-    type: 'iiia'
+    type: ''
     url: 'ya'
     key: ''
 mailing_list:
