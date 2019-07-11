@@ -2,7 +2,7 @@
 
 project: 'test'
 project_creation_date: ''
-project_category: 'no'
+project_category: ''
 lifecycle_state: 'hi'
 project_lead: &opnfv_releng_ptl
     name: 'Trevor Bramwell'
