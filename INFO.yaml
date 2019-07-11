@@ -3,7 +3,7 @@
 project: 'test'
 project_creation_date: ''
 project_category: ''
-lifecycle_state: 'hi'
+lifecycle_state: ''
 project_lead: &opnfv_releng_ptl
     name: 'Trevor Bramwell'
     company: 'The Linux Foundation'
