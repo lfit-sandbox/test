@@ -13,7 +13,7 @@ project_lead: &opnfv_releng_ptl
 primary_contact: *opnfv_releng_ptl
 issue_tracking:
     type: ''
-    url: 'ya'
+    url: ''
     key: ''
 mailing_list:
     type: ''
