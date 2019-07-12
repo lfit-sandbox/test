@@ -30,7 +30,7 @@ meetings:
       server: ''
       channel: ''
       repeats: ''
-      time: 'aba'
+      time: 'aaba'
 repositories:
     - 'test'
 committers:
