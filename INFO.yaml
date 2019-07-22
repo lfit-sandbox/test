@@ -1,5 +1,4 @@
 ---
-
 project: 'test'
 project_creation_date: ''
 project_category: ''
@@ -9,6 +8,7 @@ project_lead: &opnfv_releng_ptl
     company: 'The Linux Foundation'
     email: 'tbramwell@linuxfoundation.org'
     id: 'bramwelt'
+    github_id: 'bramwelt'
     timezone: 'America/Los_Angeles'
 primary_contact: *opnfv_releng_ptl
 issue_tracking:
@@ -30,7 +30,7 @@ meetings:
       server: ''
       channel: ''
       repeats: ''
-      time: 'abcdefg'
+      time: 'abcdefgh'
 repositories:
     - 'test'
 committers:
@@ -39,4 +39,5 @@ committers:
       email: 'agardner@linuxfoundation.org'
       company: 'The Linux Foundation'
       id: 'agardner'
+      github_id: 'Aricg'
       timezone: 'America/Montreal'
