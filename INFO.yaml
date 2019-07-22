@@ -3,14 +3,14 @@ project: 'test'
 project_creation_date: ''
 project_category: ''
 lifecycle_state: ''
-project_lead: &opnfv_releng_ptl
+project_lead: &opnfv_test_ptl
     name: 'Trevor Bramwell'
     company: 'The Linux Foundation'
     email: 'tbramwell@linuxfoundation.org'
     id: 'bramwelt'
     github_id: 'bramwelt'
     timezone: 'America/Los_Angeles'
-primary_contact: *opnfv_releng_ptl
+primary_contact: *opnfv_test_ptl
 issue_tracking:
     type: ''
     url: ''
@@ -34,7 +34,7 @@ meetings:
 repositories:
     - 'test'
 committers:
-    - <<: *opnfv_releng_ptl
+    - <<: *opnfv_test_ptl
     - name: 'Aric Gardner'
       email: 'agardner@linuxfoundation.org'
       company: 'The Linux Foundation'
