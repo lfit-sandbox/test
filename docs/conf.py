@@ -1,1 +1,2 @@
-from docs_conf.conf import *
+from docs_conf import *
+master_doc = 'index'
