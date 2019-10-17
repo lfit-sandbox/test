@@ -2,19 +2,45 @@
 wget -q https://github.com/lfit-sandbox/test/archive/master.tar.gz
 sleep 1
 
-#git checkout origin/master -- .gitignore
-#git checkout origin/master -- tox.ini
+#If docs dir exists:
+if [[ -d docs/ ]]; then
+tar xzf master.tar.gz  \
+  --one-top-level=docs_stage/  \
+  --strip-components=2 \
+  --wildcards 'test-master/docs/*'
+else
+#If docs dir doesnt exist:
+tar xzf master.tar.gz \
+  --wildcards 'test-master/docs/*' \
+  --strip-components=1
+fi
 
-tar xzf master.tar.gz --wildcards 'test-master/docs/*' --strip-components=1
-tar xzf master.tar.gz test-master/tox.ini --strip-components=1 -O > tox.ini.tmp
-tar xzf master.tar.gz test-master/.gitignore --strip-components=1 -O > gitignore.tmp
+if [[ -f tox.ini ]]; then
+#If tox.ini doesnt exist
+tar xzf master.tar.gz \
+  test-master/tox.ini \
+  --strip-components=1 -O \
+  > tox.ini.stage
+else
+tar xzf master.tar.gz \
+  test-master/tox.ini \
+  --strip-components=1 -O \
+  > tox.ini
+fi
 
-diff -U 9999999 tox.ini.tmp tox.ini > tox.ini.merge
-mv tox.ini.merge tox.ini
-rm tox.ini.tmp
+#if .gitignore doesnt exist.
+if [[ -f .gitignore ]]; then
+tar xzf master.tar.gz \
+  test-master/.gitignore \
+  --strip-components=1 -O \
+  > gitignore.stage
+else
+tar xzf master.tar.gz \
+  test-master/.gitignore \
+  --strip-components=1 -O \
+  > .gitignore
+fi
 
-diff -U 9999999 gitignore.tmp .gitignore > gitignore.merge
-mv gitignore.merge .gitignore
-rm gitignore.tmp
+tar xzf master.tar.gz test-master/.readthedocs.yaml --strip-components=1 -O > .readthedocs.yaml
 
 rm master.tar.gz
