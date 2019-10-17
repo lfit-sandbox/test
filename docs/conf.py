@@ -1,2 +1,7 @@
 from docs_conf import *
-master_doc = 'index'
+
+branch = 'latest'
+
+linkcheck_ignore = [
+              'http://localhost',
+]
