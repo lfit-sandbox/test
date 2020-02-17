@@ -1,6 +1,6 @@
 ---
 project: 'test'
-project_creation_date: ''
+project_creation_date: 'none'
 project_category: ''
 lifecycle_state: ''
 project_lead: &lfitsandbox_test_ptl
